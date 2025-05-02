@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'SpaceFuture';
-    src: url('/public/fonts/IncompleetaRegular.ttf') format('truetype');
+    src: url('../assets/fonts/IncompleetaRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
