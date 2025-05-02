@@ -1,0 +1,86 @@
+
+.border-animated {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.border-animated:hover{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: 2px dotted var(--color-primary);
+    font-weight: 500;
+}
+  
+  /* Общие стили для сторон */
+  .border-animated span {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* TOP */
+  .border-animated .top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--color-dark-gray), var(--color-primary));
+    animation: animate-top 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  /* RIGHT */
+  .border-animated .right {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--color-dark-gray), var(--color-primary));
+    animation: animate-right 2s linear infinite;
+    animation-delay: 2s;
+  }
+  
+  /* BOTTOM */
+  .border-animated .bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, var(--color-dark-gray), var(--color-primary));
+    animation: animate-bottom 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  /* LEFT */
+  .border-animated .left {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, var(--color-dark-gray), var(--color-primary));
+    animation: animate-left 2s linear infinite;
+    animation-delay: 2s;
+  }
+  
+  /* Анимации */
+  @keyframes animate-top {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  @keyframes animate-right {
+    0%   { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+  
+  @keyframes animate-bottom {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes animate-left {
+    0%   { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+  }
+  
+  

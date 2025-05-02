@@ -1,0 +1,30 @@
+
+.btn-dotted {
+    padding: 12px 20px;
+}
+.btn-dotted-animate {
+    transition:
+    box-shadow 0.5s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+  }
+  .btn-dotted-primary {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #E5673A 0%, #FF8F62 100%);
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #ffffff60; 
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.4s ease;
+  }
+  
+  .btn-dotted-primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px var(--color-primary-light);
+  }
+  
